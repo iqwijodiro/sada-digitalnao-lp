@@ -20,9 +20,75 @@
                 <div class="logo mx-5">
                     <div class="logo__name fw-bold text-uppercase">SADA</div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="wrapper-offcanvas d-block d-lg-none">
+                    <button
+                        class="navbar-toggler border-0 "
+                        type="button" 
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarOffcanvasLg"
+                        aria-controls="navbarOffcanvasLg"
+                    >
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                        <div
+                            class="offcanvas offcanvas-end"
+                            tabindex="-1"
+                            id="navbarOffcanvasLg"
+                            aria-labelledby="navbarOffcanvasLgLabel"
+                        >
+                            <div class="offcanvas-header bg-blue justify-content-start">
+                                <button 
+                                    type="button" 
+                                    class="bg-transparent border-0 text-white" data-bs-dismiss="offcanvas" 
+                                    aria-label="Close"
+                                >
+                                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                                </button>
+                                <div 
+                                    class="logo ms-5 offcanvas-title" id="offcanvasNavbarLabel">
+                                    <div 
+                                        class="logo__name fw-bold text-uppercase ms-5"
+                                    >
+                                        SADA
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offcanvas-body bg-blue">
+                                <ul class="d-flex ps-3 m-0 navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#hero">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#acerca">Acerca</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#masterclass">Masterclass</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contacto">Contacto</a>
+                                    </li>
+                                </ul>
+                            <div class="social__wrapper mt-5 d-flex justify-content-between flex-wrap">
+                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div> 
+                            </div>
+                        </div>
+                </div>
+
                 <div class="navbar__navigation collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="d-flex p-0 m-0 navbar-nav">
                         <li class="nav-item">
@@ -41,7 +107,7 @@
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
-                    <div class="social__wrapper">
+                    <div class="social__wrapper d-xl-block d-lg-none">
                         <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
                             <i class="fa-brands fa-tiktok"></i>
                         </a>
@@ -84,25 +150,24 @@
     <!-- Sección del hero - Termina -->
     
     <!-- Sección de Acerca - Inicia -->
-    <section class="about" id="acerca">
-        <div class="container pt-4">
-            <div class="about__card mt-5 p-4">
+    <section class="about py-custom" id="acerca">
+        <div class="container">
+            <div class="about__card p-4">
                 <div class="about__card--body">
-                    <div class="row px-5">
-                        <div class="col col-6">
+                    <div class="row px-sm-5">
+                        <div class="col col-md-6">
                             <img src="./assets/investing.svg" alt="Inversion en ascenso" loading="lazy" width="350">
                         </div>
-                        <div class="col col-6">
+                        <div class="col col-md-6">
                             <div class="about__content">
-                                <h2>Los resultados son nuestra marca personal</h2>
-                                <p>Los cursos y el contenido de SADA esta orientado a que vivas los resultados cuanto antes y tus finanzas te lleven a ser una mejor versión de tí</p>
-                                <a href="#" class="btn btn-wine rounded-5 py-2 px-4 float-end">Ver programa</a> 
-                                <!-- Asigno la clase botón en español, solo para distinguir de la clase btn de bootstrap -->
+                                <h2 class="h2-sm mt-2">Los resultados son nuestra marca personal</h2>
+                                <p class="p-sm px-1">Los cursos y el contenido de SADA esta orientado a que vivas los resultados cuanto antes y tus finanzas te lleven a ser una mejor versión de tí</p>
+                                <a href="#" class="btn btn-wine rounded-5 d-block d-sm-inline py-2 px-4 float-sm-end">Ver programa</a> 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about__card--footer mt-4">
+                <div class="about__card--footer mt-4 container d-none d-md-block">
                     <div class="row">
                         <div class="col col-4">
                             <p>
@@ -130,11 +195,11 @@
     <!-- Sección del Acerca - Termina -->
 
     <!-- Seccion del masterclass - Inicia -->
-    <section class="masterclass text-center" id="masterclass">
+    <section class="masterclass text-center py-custom" id="masterclass">
         <h2 class="subtitle">MASTERCLASS</h2>
-        <h2>El punto de partida para el éxito financiero</h2>
+        <h2 class="mb-4">El punto de partida para el éxito financiero</h2>
         <div class="container">
-            <div class="d-grid features">
+            <div class="d-grid features mx-auto px-3">
                 <div class="features__card">
                     <img src="./assets/arrow-up-bars.svg" alt="Imagen de acensión y orden" loading="lazy" width="150">
                     <h3>Administración personal</h3>
@@ -226,16 +291,16 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="boton">Tomar curso</a>
+            <a href="#" class="btn btn-wine rounded-5 py-2 px-4 mt-5 d-sm-inline d-block">Tomar curso</a>
         </div>
     </section>
     <!-- Seccion del masterclass - Termina -->
 
     <!-- Sección de los testimoniales - Inicia -->
-    <section class="testimonials" id="testimonios">
-        <h2>TESTIMONALES</h2>
-        <h2>Lo que ellos opina de SADA</h2>
-        <div class="container">
+    <section class="testimonials text-center py-custom" id="testimonios">
+        <h2 class="subtitle">TESTIMONIALES</h2>
+        <h2 class="mb-5">Lo que ellos opina de SADA</h2>
+        <div class="container d-flex justify-content-center align-items-center gap-4 flex-lg-row flex-column px-4">
             <div class="testimonial__card">
                 <img src="./assets/brand_1.svg" loading="lazy" height="150" alt="Logo de marca reconocida">
                 <h3>Brand vintage</h3>
@@ -243,12 +308,12 @@
             </div>
             <div class="testimonial__card">
                 <img src="./assets/green_food.svg" loading="lazy" height="150" alt="Logo de marca reconocida 2">
-                <h3>Brand vintage</h3>
+                <h3>Agro Green</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit, provident sint saepe obcaecati nobis veritatis aut molestias harum cupiditate dolor magnam suscipit consectetur itaque perferendis commodi animi quis corporis.</p>
             </div>
             <div class="testimonial__card">
                 <img src="./assets/bike_logo.svg" loading="lazy" height="150" alt="Logo de marca reconocida 3">
-                <h3>Brand vintage</h3>
+                <h3>Tecno Bike</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit, provident sint saepe obcaecati nobis veritatis aut molestias harum cupiditate dolor magnam suscipit consectetur itaque perferendis commodi animi quis corporis.</p>
             </div>
         </div>
@@ -257,48 +322,78 @@
      <!-- Seccion de los testimoniales - Termina -->
 
      <!-- Sección de llamado a la acción - Inicia -->
-     <section class="contact" id="contact">
-        <h2>CONTACTANOS</h2>
+     <section class="contact text-center py-custom px-2" id="contacto">
+        <h2 class="subtitle">CONTACTANOS</h2>
         <h2>Inscribete en el próximo curso</h2>
         <div class="container">
-            <img src="./assets/form-img.svg" alt="Imagen de barras en ascenso" loading="lazy" width="400">
-            <form action="#">
-                <div class="row">
-                    <input type="text" required placeholder="Nombre y Apellido">
-                    <input type="text" required placeholder="País">
+            <div class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+                <div class="contact__image">
+                    <img src="./assets/form-img.svg" alt="Imagen de barras en ascenso" loading="lazy" width="400">
                 </div>
-                <div class="row">
-                    <input type="email" required placeholder="Correo Electrónico">
+                <div class="contact__form mt-3">
+                    <form id="form">
+                        <div class="d-flex flex-column flex-lg-row flex-wrap">
+                            <div class="form-field">
+                                <input type="text" placeholder="Nombre y Apellido" id="nombre">
+                                <small>Error Message</small>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" placeholder="País" id="pais">
+                                <small>Error Message</small>
+                            </div>
+                            <div class="form-field">
+                                <input type="email" placeholder="Correo Electrónico" id="email">
+                                <small>Error Message</small>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-wine rounded-5 py-2 px-5 mt-5 float-md-end d-sm-inline-block">Enviar</button>
+                    </form>
                 </div>
-                <button type="submit">Enviar</button>
-            </form>
+            </div>
+
         </div>
      </section>
      <!-- Sección de llamado a la acción - Termina -->
 
      <!-- Footer o pie de página - Inicia -->
-     <footer>
-        <div class="logo">
-            <div class="logo__name">SADA</div>
+     <footer class="bg-blue pt-5 my-0">
+        <div class="container borderbottom-w d-flex flex-column flex-md-row align-items-center justify-content-between py-3">
+
+            <div class="logo ms-md-5">
+                <div class="logo__name ms-md-5">SADA</div>
+            </div>
+            <nav class="d-flex flex-column flex-md-row justify-content-between align-items-md-end align-items-center">
+                <ul class="d-flex flex-wrap justify-content-sm-between p-0 my-5 m-sm-0  footer__nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">Acerca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#masterclass">Masterclass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <div class="social__wrapper d-flex justify-content-between align-items-center">
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>  
+            </nav>
         </div>
-        <nav>
-            <li href="#acerca">Acerca</li>
-            <li href="#masterclass">Masterclass</li>
-            <li href="#testimonios">Testimonios</li>
-            <li href="#contacto">Contacto</li>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-        </nav>
+        <p class="text-white text-center py-4 m-0">Copyright. All rights reserved</p>
      </footer>
      <!-- Footer o pie de página - Termina -->
 
