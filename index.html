@@ -4,52 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Caroline Sada es una influencer financiera que ha brindado ayuda y asesoría a cientos de miles de personas alrededor del mundo y decenas de organizaciones. Te ofrece su curso online para empoderar tu vida financiera>
+    <meta name="description" content="Caroline Sada es una influencer financiera que ha brindado ayuda y asesoría a cientos de miles de personas alrededor del mundo y decenas de organizaciones. Te ofrece su curso online para empoderar tu vida financiera">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;900&family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>SADA | Asesoría Financiera</title>
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <div class="logo__name">SADA</div>
-        </div>
-        <nav>
-            <li href="#hero">Inicio</li>
-            <li href="#acerca">Acerca</li>
-            <li href="#masterclass">Masterclass</li>
-            <li href="#testimonios">Testimonios</li>
-            <li href="#contacto">Contacto</li>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+    <!-- Barra de navegación - Inicia -->
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+            <div class="container">
+                <div class="logo mx-5">
+                    <div class="logo__name fw-bold text-uppercase">SADA</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar__navigation collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="d-flex p-0 m-0 navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acerca">Acerca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#masterclass">Masterclass</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="social__wrapper">
+                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>    
+                </div>
+    
+            </div>
         </nav>
-    </header>
+    <!-- Barra de navegación - Inicia -->
+
     <!-- Sección del hero - Inicia -->
-    <section class="hero">
+    <section class="hero d-flex align-items-center justify-content-center">
         <!-- Capa superpuesta para dar color y trasparencia -->
         <div class="overlay"></div>
-        <!-- Imagenes de fondo detrás del overlay -->
-        <div style="background-image: url('./assets/global_net.svg');"></div>
-        <div style="background-image: url('./assets/business-crew.svg');"></div>
-        <div class="container">
-            <div class="wrapper">
-                <h1>Domina tus finanzas</h1>
-                <h2>Caroline Sada te enseña a convertir tu vida financiera en tu mejor historia</h2>
-                <p>Recibe consejos cada semana para potenciar tus finanzas</p>
-                <div class="control-form">
-                    <form action="#">
-                        <input type="email" required placeholder="Correo Electrónico">
-                        <button type="submit">Enviar</button>
-                    </form>
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="wrapper text-center">
+                    <h1 class="h1 text-uppercase fw-bold">Domina tus finanzas</h1>
+                    <h2>Caroline Sada te enseña a convertir tu vida financiera en tu mejor historia</h2>
+                    <p class="mt-5">Recibe consejos cada semana para potenciar tus finanzas</p>
+                    <div class="subscribe-form mt-2">
+                        <form action="#">
+                            <input type="email" required placeholder="Correo Electrónico">
+                            <button type="submit" class="btn btn-wine">Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,35 +85,44 @@
     
     <!-- Sección de Acerca - Inicia -->
     <section class="about" id="acerca">
-        <div class="wave" style="background-image: url('./assets/wave.svg');"></div>
-        <div class="about__card">
-            <div class="about__card--body">
-                <img src="./assets/investing.svg" alt="Inversion en ascenso" loading="lazy" width="350">
-                <div class="about__content">
-                    <h2>Los resultados son nuestra marca personal</h2>
-                    <p>Los cursos y el contenido de SADA esta orientado a que vivas los resultados cuanto antes y tus finanzas te lleven a ser una mejor versión de tí</p>
-                    <a href="#" class="boton">Ver programa</a> 
-                    <!-- Asigno la clase botón en español, solo para distinguir de la clase btn de bootstrap -->
+        <div class="container pt-4">
+            <div class="about__card mt-5 p-4">
+                <div class="about__card--body">
+                    <div class="row px-5">
+                        <div class="col col-6">
+                            <img src="./assets/investing.svg" alt="Inversion en ascenso" loading="lazy" width="350">
+                        </div>
+                        <div class="col col-6">
+                            <div class="about__content">
+                                <h2>Los resultados son nuestra marca personal</h2>
+                                <p>Los cursos y el contenido de SADA esta orientado a que vivas los resultados cuanto antes y tus finanzas te lleven a ser una mejor versión de tí</p>
+                                <a href="#" class="btn btn-wine rounded-5 py-2 px-4 float-end">Ver programa</a> 
+                                <!-- Asigno la clase botón en español, solo para distinguir de la clase btn de bootstrap -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="about__card--footer">
-                <div>
-                    <p>
-                        <span>+600</span>
-                        nuevos maestros de sus finanzas
-                    </p> 
-                </div>
-                <div>
-                    <p>
-                        <span>+50</span>
-                        compañias que confian en nuestros resultados
-                    </p> 
-                </div>
-                <div>
-                    <p>
-                        <span>+20k</span>
-                        seguidores en cada una de nuestras redes sociales
-                    </p> 
+                <div class="about__card--footer mt-4">
+                    <div class="row">
+                        <div class="col col-4">
+                            <p>
+                                <span>+600</span>
+                                nuevos maestros de sus finanzas
+                            </p> 
+                        </div>
+                        <div class="col col-4">
+                            <p>
+                                <span>+50</span>
+                                compañias que confian en nuestros resultados
+                            </p> 
+                        </div>
+                        <div class="col col-4">
+                            <p>
+                                <span>+20k</span>
+                                seguidores en cada una de nuestras redes sociales
+                            </p> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,12 +130,12 @@
     <!-- Sección del Acerca - Termina -->
 
     <!-- Seccion del masterclass - Inicia -->
-    <section class="masterclass" id="masterclass">
-        <h2>MASTERCLASS</h2>
+    <section class="masterclass text-center" id="masterclass">
+        <h2 class="subtitle">MASTERCLASS</h2>
         <h2>El punto de partida para el éxito financiero</h2>
         <div class="container">
-            <div class="grid features">
-                <div class="feature__card">
+            <div class="d-grid features">
+                <div class="features__card">
                     <img src="./assets/arrow-up-bars.svg" alt="Imagen de acensión y orden" loading="lazy" width="150">
                     <h3>Administración personal</h3>
                     <p>Administra tu forma de vivir</p>
@@ -114,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
+                <div class="features__card">
                     <img src="./assets/moneytrend-up.svg" alt="Imagen de aumento de dinero" loading="lazy" width="150">
                     <h3>¿Cómo funciona el dinero?</h3>
                     <p>Conoce realmente el dinero</p>
@@ -129,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
+                <div class="features__card">
                     <img src="./assets/scale-balanced.svg" alt="Imagen de balanza equilibrada" loading="lazy" width="150">
                     <h3>Economía en pocas palabras</h3>
                     <p>Lo que no te han contado</p>
@@ -144,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
+                <div class="features__card">
                     <img src="./assets/chart-line.svg" alt="Imagen de gráfico tendencia en alza" loading="lazy" width="150">
                     <h3>Objetivo: Prosperidad</h3>
                     <p>Conoce los tipos de riqueza</p>
@@ -159,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
+                <div class="features__card">
                     <img src="./assets/drop-slash.svg" alt="Imagen de gota tachada" loading="lazy" width="150">
                     <h3>No más fugas</h3>
                     <p>Eres esclavo de lo que gastas</p>
@@ -174,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
+                <div class="features__card">
                     <img src="./assets/gamepad-solid.svg" alt="Imagen de control de videojuego" loading="lazy" width="150">
                     <h3>Próximo nivel</h3>
                     <p>Sigue aplicando el control</p>
@@ -196,10 +232,10 @@
     <!-- Seccion del masterclass - Termina -->
 
     <!-- Sección de los testimoniales - Inicia -->
-    <section class="testimonials" id="testimonials">
+    <section class="testimonials" id="testimonios">
         <h2>TESTIMONALES</h2>
         <h2>Lo que ellos opina de SADA</h2>
-        <div class="row">
+        <div class="container">
             <div class="testimonial__card">
                 <img src="./assets/brand_1.svg" loading="lazy" height="150" alt="Logo de marca reconocida">
                 <h3>Brand vintage</h3>
@@ -266,6 +302,7 @@
      </footer>
      <!-- Footer o pie de página - Termina -->
 
-    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

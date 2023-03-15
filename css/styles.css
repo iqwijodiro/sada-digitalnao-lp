@@ -1,0 +1,234 @@
+/* General styles & resets */
+:root {
+    --white: #f0f0f0;
+    --red-wine: #5c0029;
+    --blue-dark: #00378c;
+    --blue-light: #5d8ef0e6;
+    --gray-darken: #646464;
+    --gray-mid: #929292;
+    --gray-old: #c7beb4;
+}
+
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Prompt', sans-serif;
+    line-height: 1.5;
+    color: var(--blue-dark);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+ul, ol, dl {
+    list-style-type: none;
+}
+
+a, li {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-light);
+}
+
+.btn.btn-wine {
+    background-color: var(--red-wine);
+    color: var(--white);
+}
+
+
+
+/* Navbar */
+
+.navbar-custom {
+    padding: 0;
+    height: 6rem;
+    background-color: transparent;
+}
+
+
+.navbar__navigation .social__wrapper {
+    max-width: 150px;
+}
+
+.navbar__navigation ul li {
+    margin: 0 1rem;
+}
+
+.navbar__navigation .social__wrapper a {
+    margin: 0 .25rem;
+}
+
+.navbar__navigation ul li,
+.navbar__navigation .social__wrapper a {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.logo__name {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.1rem;
+    color: var(--white);
+}
+
+.nav-link {
+    color: var(--white);
+}
+.nav-link.active {
+    color: var(--gray-old) !important;
+    font-weight: 700;
+    border-bottom: 2px solid var(--gray-old);
+}
+
+.nav-link:hover {
+    color: var(--blue-dark);
+}
+
+.nav-sticky.navbar-custom {
+  margin-top: 0px;
+  /* padding: 10px 0px; */
+  box-shadow: 0px 3px 10px 0px rgba(38, 107, 193, 0.08);
+}
+
+.nav-sticky.navbar-custom.sticky-dark {
+    background-color: var(--blue-dark);
+}
+
+/*Hero*/
+
+.hero {
+    background-image: url('../assets/Group1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+    position: relative;
+    z-index: -1;
+    /* margin: 6rem 0 0 0; */
+}
+
+.hero .container {
+    min-height: 100%;
+    position: absolute;
+    color: var(--white);
+}
+
+.wrapper {
+    max-width: 600px;
+}
+
+.wrapper h2 {
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.wrapper p {
+    font-size: 1.2rem;
+}
+
+.subscribe-form input {
+  padding: 1rem 1.25rem;
+  width: 100%;
+  font-size: inherit;
+  color: var(--gray-darken);
+  border: none;
+  outline: none !important;
+  padding-right: 180px;
+  padding-left: 30px;
+  background-color: var(--white);
+  border-radius: 30px;
+}
+
+.subscribe-form button {
+  position: absolute;
+  text-transform: uppercase;
+  top: 6px;
+  right: 8px;
+  outline: none !important;
+  border-radius: 30px;
+  font-size: 1rem;
+  padding: .6rem 2.5rem;
+}
+
+.subscribe-form form {
+  position: relative;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+
+/* About Section */
+
+.about {
+    background-image: url('../assets/wave.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    min-height: 650px;
+}
+
+.about__card {
+    background-color: var(--white);
+    border-radius: 30px;
+    max-width: 1100px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.about__content p {
+    font-size: 1.2rem;
+}
+
+.about__card--footer p {
+    display: flex;
+    align-items: baseline;
+    width: 70%;
+    color: var(--gray-mid);
+}
+.about__card--footer p span {
+    margin: 0 .5rem;
+    color: var(--blue-dark);
+    font-size: 2rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    display: block;
+}
+
+/*Masterclass*/
+.masterclass .subtitle {
+    color: var(--red-wine);
+    font-size: 1.2rem;
+}
+
+.masterclass .features {
+    grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2rem;
+   height: 100%;
+}
+
+.features__card {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+    border-radius: 30px;
+}
