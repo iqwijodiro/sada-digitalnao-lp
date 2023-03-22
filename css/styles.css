@@ -216,12 +216,13 @@ a, li {
 .subscribe-form button {
   position: absolute;
   text-transform: uppercase;
-  top: 6px;
-  right: 8px;
+  top: 5%;
+  right: .5%;
   outline: none !important;
   border-radius: 30px;
   font-size: 1rem;
   padding: .6rem 2.5rem;
+  margin: .1rem;
 }
 
 .subscribe-form form {
@@ -315,6 +316,10 @@ a, li {
     color: var(--gray-mid);
 }
 
+.features__card--resources div p {
+    margin: 0 .5rem;
+}
+
 /* testimonials */
 
 .testimonials {
@@ -325,6 +330,7 @@ a, li {
     background-color: var(--white);
     border-radius: 1.25rem;
     padding: 1rem 1.5rem;
+    margin: 1rem;
 }
 
 .testimonial__card h3 {
